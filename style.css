@@ -1,0 +1,614 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("./assets/fonts/fonnts.com-Congenial_Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* navbar part start */
+.navbar-brand {
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+.nav-item {
+  font-size: 20px;
+  background-color: rgb(243, 243, 243);
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  margin-right: 10px;
+  font-family: "MyFont";
+  transition: all 200ms;
+}
+#nav-item-s {
+  width: 50px;
+  font-family: "MyFont";
+}
+.nav-item:hover {
+  background-color: rgb(166, 166, 166);
+}
+.line1 {
+  width: 95vw;
+  margin: auto;
+  height: 97px;
+  background-image: url("./assets/images/llline\ \(1\).svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 1100px) {
+  .navbar-brand {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .nav-item {
+    margin-top: 10px;
+    background-color: unset;
+    text-align: unset;
+  }
+  .nav-item:hover {
+    background-color: unset;
+  }
+  .navbar-collapse {
+    display: unset;
+  }
+  .ms-5 {
+    margin-left: 0px !important;
+  }
+}
+/* navbar part end */
+
+/* header part start */
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header h1 {
+  font-size: 75px;
+  margin-bottom: 50px;
+  font-family: "MyFont";
+}
+header .container-fluid {
+  width: 95%;
+  margin: auto;
+}
+header .container-fluid .first {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(243, 248, 255);
+  border-radius: 30px;
+  display: flex;
+}
+header .container-fluid .first .ff {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .container-fluid .first .ff h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 80px;
+  font-family: "MyFont";
+}
+header .container-fluid .first .ff h2 span {
+  font-size: 130px;
+  font-family: "MyFont";
+}
+header .container-fluid .first .fs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .container-fluid .first .fs ul {
+  font-size: 37px;
+  font-family: "MyFont";
+}
+header .container-fluid .second {
+  margin-top: 40px;
+  width: 100%;
+  height: 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container-fluid .second .s {
+  width: 30%;
+  height: 100%;
+  background-color: rgb(243, 248, 255);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .container-fluid .second .sf h3 {
+  text-align: center;
+  font-size: 65px;
+  font-family: "MyFont";
+}
+header .container-fluid .second .ss h3 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "MyFont";
+}
+header .container-fluid .second .ss h3 span {
+  font-size: 35px;
+}
+header .container-fluid .second .st h3 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "MyFont";
+}
+header .container-fluid .second .st h3 span {
+  font-size: 35px;
+  font-family: "MyFont";
+}
+@media only screen and (max-width: 1260px) {
+  header .container-fluid .second .sf h3 {
+    font-size: 50px;
+  }
+  header .container-fluid .second .ss h3 {
+    font-size: 40px;
+  }
+  header .container-fluid .second .st h3 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  header h1 {
+    font-size: 55px;
+  }
+  .first {
+    flex-direction: column;
+  }
+  .ff {
+    width: 100% !important;
+  }
+  .ff h2 span {
+    font-size: 80px !important;
+  }
+  .ff h2 {
+    margin-top: 20px;
+    font-size: 60px !important;
+  }
+  .fs ul {
+    font-size: 25px !important;
+  }
+  .fs {
+    width: 70%;
+    margin: auto;
+  }
+  .second .s span {
+    font-size: 25px !important;
+  }
+  header .container-fluid .second .sf h3 {
+    font-size: 40px;
+  }
+  header .container-fluid .second .ss h3 {
+    font-size: 30px;
+  }
+  header .container-fluid .second .st h3 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .line1 {
+    margin-bottom: 10px;
+  }
+  header h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .ff h2 {
+    margin-top: 20px;
+    font-size: 50px !important;
+  }
+  .ff h2 span {
+    font-size: 60px !important;
+  }
+  .fs ul {
+    font-size: 25px !important;
+    width: 80%;
+    margin: auto;
+  }
+  .fs {
+    width: 100%;
+  }
+  .ff {
+    height: 50%;
+  }
+  .first {
+    height: 430px !important;
+  }
+  .second {
+    flex-direction: column;
+  }
+  .second .s {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+}
+/* header part end */
+
+/* main part start */
+main {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+}
+.mainheader {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.line2 {
+  margin-left: 50px;
+  width: 100%;
+  height: 1000px;
+  background-image: url("./assets/images/llline\ \(2\).svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.mainheader h3 {
+  height: inherit;
+  font-size: 50px;
+  font-family: "MyFont";
+}
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: min-content;
+}
+.mc1,
+.mc2 {
+  width: 100%;
+  height: 600px;
+  background-color: hsl(155, 86%, 97%);
+  margin-bottom: 40px;
+}
+.mc1 {
+  height: 580px;
+}
+.mcimage1,
+.mcimage2 {
+  width: 37%;
+  height: inherit;
+  float: left;
+  background-image: url("./assets/images/blank-h9v8oske8iey8nkq.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+}
+.mctext1,
+.mctext2 {
+  width: 63%;
+  height: 100%;
+  float: right;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+.mctext1 p,
+.mctext2 p {
+  font-size: 50px;
+  font-family: "MyFont";
+}
+.mctext1 span,
+.mctext2 span {
+  font-weight: bold;
+}
+.mcimage2 {
+  width: 25%;
+  float: right;
+}
+.mctext2 {
+  width: 75%;
+  float: left;
+}
+@media only screen and (max-width: 1200px) {
+  .mcimage1 {
+    width: 50%;
+  }
+  .mctext1 {
+    width: 50%;
+  }
+  .mcimage2 {
+    width: 35%;
+  }
+  .mctext2 {
+    width: 65%;
+  }
+  .mctext1 p,
+  .mctext2 p {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .mcimage1,
+  .mcimage2 {
+    width: 100%;
+  }
+  .mctext1,
+  .mctext2 {
+    width: 100%;
+    height: 40%;
+    padding-left: unset;
+  }
+  .mctext1 p,
+  .mctext2 p {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+  }
+  .mc1,
+  .mc2 {
+    height: 600px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mainheader h3 {
+    font-size: 40px;
+    height: fit-content;
+  }
+  .line2 {
+    margin-left: 30px;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .mctext1 p,
+  .mctext2 p {
+    font-size: 30px;
+  }
+  mcimage1,
+  .mcimage2 {
+    height: 70%;
+  }
+}
+/* main part end */
+
+/* footer part start */
+/* footerheader subpart start */
+footer {
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(243, 243, 243);
+  border-top: rgb(0, 0, 255) 6px solid;
+}
+.fheader {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fheader h4,
+.fheader p {
+  font-size: 50px;
+  font-family: "MyFont";
+}
+.fheader p {
+  font-size: 38px;
+}
+.fform {
+  width: 83%;
+  height: 350px;
+  margin: auto;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 37%;
+  float: left;
+  font-size: 25px;
+}
+.inputs input {
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: black solid 3px;
+  background-color: rgb(217, 217, 217);
+  padding: 15px 15px;
+  text-align: center;
+}
+.inputs input::placeholder,
+textarea::placeholder {
+  color: black;
+  font-size: 28px;
+  font-family: serif;
+}
+textarea::placeholder {
+  font-size: 30px;
+  position: absolute;
+  bottom: 45%;
+  left: 38%;
+}
+.textarea {
+  width: 62%;
+  float: right;
+  font-size: 25px;
+  position: relative;
+}
+.textarea textarea {
+  background-color: rgb(217, 217, 217);
+  border: black solid 3px;
+  border-radius: 10px;
+  resize: none;
+  width: 100%;
+  height: 343px;
+}
+.textarea textarea::placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#fbutton {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-family: "MyFont";
+  font-size: 25px;
+  background-color: rgb(204, 204, 255);
+  border-radius: 10px;
+  border: black solid 3px;
+  padding: 5px 30px;
+}
+/* footerheader subpart end */
+
+.footer {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.footerf {
+  width: 30%;
+}
+.footerr {
+  width: 53%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footerf .navbar-brand {
+  font-size: 45px;
+}
+.footerf ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footerf ul li {
+  font-family: "MyFont";
+  font-size: 30px;
+}
+.footers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.if {
+  font-size: 27px;
+  font-family: "MyFont";
+  padding-bottom: 20px;
+  width: 50%;
+}
+.if a {
+  color: black;
+  text-decoration: none;
+}
+.if i {
+  padding-right: 20px;
+  font-size: xx-large;
+}
+.footerth {
+  width: 80%;
+}
+.footerth p {
+  font-size: 25px;
+  font-family: "MyFont";
+  text-align: center;
+}
+@media only screen and (max-width: 1300px) {
+  .fheader h4 {
+    font-size: 35px;
+  }
+  .fheader {
+    width: 80%;
+    margin: auto;
+  }
+  .fheader p {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .fform {
+    height: 700px;
+  }
+  .fform form {
+    display: flex;
+    flex-direction: column;
+  }
+  .fform form .inputs {
+    width: 100%;
+  }
+  .textarea {
+    width: 100%;
+  }
+  .textarea textarea::placeholder {
+    font-size: 25px;
+  }
+  .inputs input {
+    padding: 10px 10px;
+  }
+  .inputs input::placeholder {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .if {
+    width: 100%;
+    text-align: center;
+  }
+  .footerth {
+    width: 100%;
+    padding-top: 5px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .fheader h4,
+  .fheader p {
+    font-size: 30px;
+  }
+  .fheader p {
+    font-size: 25px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footerf {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footerr {
+    width: 100%;
+  }
+  .footerf .navbar-brand {
+    font-size: 50px;
+  }
+}
+/* footer part end */
